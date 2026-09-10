@@ -1,0 +1,47 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Environment Variables & Secrets
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Streamlit Cache & Local Configurations
+.streamlit/
+!.streamlit/config.toml
+
+# IDE and Editor Files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Distribution / Packaging / Builds
+build/
+dist/
+*.egg-info/
+*.egg
+
+# Temporary, Logs & Uploaded User Data
+*.log
+*.tmp
+temp/
+tmp/
+uploads/
+user_data/
+personal_resumes/
+private_docs/
