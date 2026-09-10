@@ -1,0 +1,24 @@
+Jordan Taylor
+Email: jordan.taylor@example.com | Phone: (555) 345-9876
+GitHub: github.com/jordantaylor | Portfolio: jordantaylor.dev
+
+PROFESSIONAL SUMMARY
+Frontend Web Developer with 2+ years of experience building modern, responsive user interfaces with JavaScript, React, HTML, and CSS. Experienced in REST API integration, Git version control, and Agile development.
+
+TECHNICAL SKILLS
+- Languages: JavaScript, HTML, CSS, TypeScript
+- Frontend Frameworks: React, Bootstrap, Tailwind CSS
+- Version Control & Tools: Git, GitHub, VS Code, npm, Webpack
+- Databases: MongoDB
+- Professional Competencies: Teamwork, Problem Solving, Communication
+
+EXPERIENCE
+Frontend Developer | WebCraft Studios (2022 - Present)
+- Developed responsive single-page web applications using React and JavaScript.
+- Collaborated with UI/UX designers to translate Figma mockups into accessible, cross-browser web interfaces.
+- Consumed backend REST APIs and handled state management with React hooks and Redux.
+- Utilized Git and GitHub for version control, code reviews, and branch management.
+
+Junior Web Developer | PixelCraft Media (2021 - 2022)
+- Built landing pages using HTML, CSS, and vanilla JavaScript.
+- Maintained legacy website codebase and resolved responsive design bugs across mobile and desktop.

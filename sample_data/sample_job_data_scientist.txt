@@ -1,0 +1,25 @@
+Position: Senior Data Scientist / Machine Learning Engineer
+Company: CloudScale AI Technologies
+Location: Remote / Hybrid
+
+ABOUT THE ROLE:
+We are seeking a talented Data Scientist to join our enterprise AI engineering team. In this role, you will build production-grade machine learning models, natural language processing applications, and data analytics pipelines.
+
+KEY RESPONSIBILITIES:
+- Design, train, and evaluate predictive machine learning models and deep learning architectures.
+- Implement NLP and text analysis models to process unstructured enterprise data.
+- Build robust data pipelines and perform statistical data analysis on terabyte-scale datasets.
+- Deploy and monitor AI services on cloud infrastructure using Docker, Kubernetes, and Amazon Web Services (AWS) or Google Cloud Platform (GCP).
+- Work closely with engineering teams in an Agile scrum environment to integrate models into production REST API services.
+- Present data-driven insights and interactive dashboards using Power BI or Tableau.
+
+REQUIRED QUALIFICATIONS & SKILLS:
+- Bachelor's or Master's degree in Computer Science, Statistics, or related technical field.
+- 3+ years of hands-on experience in Python, SQL, and data analysis.
+- Strong proficiency in Machine Learning frameworks: Scikit-Learn, PyTorch, or TensorFlow.
+- Experience with Natural Language Processing (NLP) or Computer Vision techniques.
+- Solid experience with relational databases such as PostgreSQL or MySQL.
+- Experience with containerization (Docker, Kubernetes) and CI/CD pipelines.
+- Familiarity with cloud environments: Amazon Web Services (AWS) or Microsoft Azure.
+- Experience with business intelligence tools: Power BI or Tableau.
+- Strong problem solving, communication, and collaboration skills.

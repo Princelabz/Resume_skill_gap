@@ -1,0 +1,22 @@
+Job Title: Full Stack Software Engineer
+Company: InnovateTech Systems
+Location: New York, NY / Hybrid
+
+ROLE OVERVIEW:
+We are seeking an ambitious Full Stack Developer to build next-generation web applications. You will work across both client-side and server-side systems.
+
+RESPONSIBILITIES:
+- Architect and develop scalable web applications using React, TypeScript, and Node.js.
+- Build resilient backend microservices with REST APIs and PostgreSQL database storage.
+- Manage containerization workflows using Docker and Kubernetes.
+- Implement CI/CD deployment pipelines on Amazon Web Services (AWS).
+- Collaborate in an Agile team with continuous code integration and automated testing.
+
+REQUIRED TECHNICAL SKILLS:
+- Proficiency in JavaScript, TypeScript, and Node.js.
+- Strong hands-on experience with modern frontend frameworks, specifically React.
+- Experience with relational databases (PostgreSQL or MySQL) and NoSQL (MongoDB or Redis).
+- Experience with Docker and container orchestration (Kubernetes).
+- Familiarity with cloud services on Amazon Web Services (AWS) or Google Cloud Platform (GCP).
+- Experience with REST API design, Git, GitHub, and Agile methodologies.
+- Excellent communication, critical thinking, and problem solving skills.

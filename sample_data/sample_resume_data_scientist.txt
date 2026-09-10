@@ -1,0 +1,32 @@
+Alex Rivera
+Email: alex.rivera@example.com | Phone: (555) 019-2834
+LinkedIn: linkedin.com/in/alexrivera-ds | GitHub: github.com/alexrivera
+
+PROFESSIONAL SUMMARY
+Data Scientist with 3+ years of experience designing and deploying machine learning models, statistical analysis workflows, and data pipelines. Proficient in Python, SQL, and cloud platforms. Passionate about natural language processing and scalable analytics.
+
+TECHNICAL SKILLS
+- Programming & Query: Python, SQL, R, Bash
+- Machine Learning & Deep Learning: Scikit-Learn, PyTorch, TensorFlow, Natural Language Processing (NLP), Computer Vision
+- Data Analysis & Visualization: Pandas, NumPy, Matplotlib, Seaborn, Tableau, Microsoft Excel
+- Databases: PostgreSQL, MongoDB, MySQL
+- DevOps & Cloud: Docker, Git, GitHub, Amazon Web Services (AWS)
+- Core Competencies: Problem Solving, Critical Thinking, Teamwork, Communication
+
+WORK EXPERIENCE
+
+Data Scientist | Apex Analytics Solutions (2022 – Present)
+- Developed supervised and unsupervised machine learning pipelines using Python and Scikit-Learn to predict customer churn, achieving 87% ROC-AUC.
+- Implemented natural language processing (NLP) algorithms for automated document classification and sentiment analysis on customer feedback.
+- Automated ETL and data analysis workflows with Pandas, NumPy, and SQL, reducing data preparation cycle time by 35%.
+- Containerized model training workflows with Docker and deployed inference endpoints on AWS.
+- Created interactive dashboards in Tableau and Excel to communicate predictive insights to non-technical stakeholders.
+
+Junior Data Analyst | Quantum Insights Corp (2020 – 2022)
+- Extracted and queried large-scale relational datasets using PostgreSQL and MySQL.
+- Performed exploratory data analysis (EDA) and built regression models for pricing optimization.
+- Collaborated in cross-functional Agile sprint cycles with software engineers and product managers.
+
+EDUCATION
+Bachelor of Science in Computer Science & Data Analytics
+University of Technology (2016 – 2020)

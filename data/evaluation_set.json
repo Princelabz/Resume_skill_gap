@@ -1,0 +1,88 @@
+[
+  {
+    "id": "test_ds_01",
+    "domain": "Data Science",
+    "text": "Senior Data Scientist with 4 years of experience building Machine Learning and Deep Learning pipelines in Python. Proficient in Natural Language Processing, Scikit-Learn, PyTorch, Pandas, and SQL for Data Analysis. Experienced with Docker, Git, and deploying models to Amazon Web Services (AWS).",
+    "ground_truth_skills": [
+      "data science",
+      "machine learning",
+      "deep learning",
+      "python",
+      "natural language processing",
+      "scikit-learn",
+      "pytorch",
+      "pandas",
+      "sql",
+      "data analysis",
+      "docker",
+      "git",
+      "amazon web services"
+    ]
+  },
+  {
+    "id": "test_fs_02",
+    "domain": "Full Stack Engineering",
+    "text": "Full Stack Developer specializing in Web Development. Strong foundation in JavaScript, TypeScript, React, and Node.js. Experience building REST APIs with PostgreSQL and MongoDB. Skilled in Docker, Git, GitHub, and Agile team environments.",
+    "ground_truth_skills": [
+      "full stack development",
+      "web development",
+      "javascript",
+      "typescript",
+      "react",
+      "node.js",
+      "rest api",
+      "postgresql",
+      "mongodb",
+      "docker",
+      "git",
+      "github",
+      "agile"
+    ]
+  },
+  {
+    "id": "test_bi_03",
+    "domain": "Business Intelligence & Analytics",
+    "text": "Business Intelligence Analyst with expertise in Data Analysis and reporting. Expert in Microsoft Excel, Power BI Desktop, Tableau, and SQL Server. Proven track record in problem solving, communication, and critical thinking.",
+    "ground_truth_skills": [
+      "business intelligence",
+      "data analysis",
+      "microsoft excel",
+      "power bi",
+      "tableau",
+      "sql",
+      "problem solving",
+      "communication",
+      "critical thinking"
+    ]
+  },
+  {
+    "id": "test_devops_04",
+    "domain": "DevOps & Cloud Infrastructure",
+    "text": "Cloud DevOps Engineer with in-depth knowledge of Kubernetes, Docker, Linux, and Cloud Computing. Managing CI/CD pipelines and infrastructure as code across Google Cloud Platform (GCP) and Microsoft Azure.",
+    "ground_truth_skills": [
+      "devops",
+      "kubernetes",
+      "docker",
+      "linux",
+      "cloud computing",
+      "cicd",
+      "google cloud platform",
+      "microsoft azure"
+    ]
+  },
+  {
+    "id": "test_swe_05",
+    "domain": "Backend Software Engineering",
+    "text": "Software Engineer working with C++, C#, .NET framework, and Java. Designing distributed backend systems with Redis, MySQL, and REST API architectures.",
+    "ground_truth_skills": [
+      "c++",
+      "c#",
+      ".net",
+      "java",
+      "backend development",
+      "redis",
+      "mysql",
+      "rest api"
+    ]
+  }
+]
