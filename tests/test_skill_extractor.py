@@ -30,7 +30,7 @@ class TestSkillExtractor(unittest.TestCase):
             "microsoft excel",
             "natural language processing",
             "computer vision",
-            "amazon web services",
+            "aws",
         ]
 
         for skill in expected_skills:
@@ -45,7 +45,7 @@ class TestSkillExtractor(unittest.TestCase):
         self.assertIn("natural language processing", extracted)
         self.assertIn("javascript", extracted)
         self.assertIn("microsoft excel", extracted)
-        self.assertIn("amazon web services", extracted)
+        self.assertIn("aws", extracted)
         self.assertIn("power bi", extracted)
 
     def test_programming_special_patterns(self):

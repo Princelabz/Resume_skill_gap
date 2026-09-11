@@ -6,3 +6,4 @@ nltk>=3.8.0
 spacy>=3.7.0
 pypdf>=4.0.0
 plotly>=5.18.0
+rapidfuzz>=3.0.0

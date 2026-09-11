@@ -19,6 +19,7 @@ from src.config import (
     ALIAS_MAP_PATH,
     DEFAULT_ALIASES,
 )
+from src.skill_taxonomy import is_valid_skill, SINGLE_TOKEN_BLOCKLIST
 
 
 def find_data_file(filename: str) -> Path:
@@ -82,6 +83,8 @@ def build_skills_knowledge_base():
             continue
 
         skill_key = raw_skill.lower()
+        if skill_key in SINGLE_TOKEN_BLOCKLIST:
+            continue
         hot_tech = str(row.get("Hot Technology", "N")).strip().upper() == "Y"
         in_demand = str(row.get("In Demand", "N")).strip().upper() == "Y"
         category = str(row.get("Element Name", "Software")).strip()
@@ -123,6 +126,8 @@ def build_skills_knowledge_base():
             continue
 
         skill_key = raw_skill.lower()
+        if skill_key in SINGLE_TOKEN_BLOCKLIST or not is_valid_skill(skill_key):
+            continue
         avg_score = float(row["mean"])
         occ_count = int(row["count"])
 
@@ -149,6 +154,9 @@ def build_skills_knowledge_base():
         ("data analysis", "Data & Analytics", "software", True, True),
         ("data science", "Data & Analytics", "software", True, True),
         ("data engineering", "Data & Analytics", "software", True, True),
+        ("data visualization", "Data & Analytics", "software", True, True),
+        ("statistics", "Data & Analytics", "essential", True, True),
+        ("microsoft excel", "Office & Productivity", "software", True, True),
         ("cloud computing", "Infrastructure", "software", True, True),
         ("big data", "Data & Analytics", "software", True, False),
         ("web development", "Software Development", "software", False, False),

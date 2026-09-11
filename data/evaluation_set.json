@@ -1,8 +1,110 @@
 [
   {
-    "id": "test_ds_01",
-    "domain": "Data Science",
-    "text": "Senior Data Scientist with 4 years of experience building Machine Learning and Deep Learning pipelines in Python. Proficient in Natural Language Processing, Scikit-Learn, PyTorch, Pandas, and SQL for Data Analysis. Experienced with Docker, Git, and deploying models to Amazon Web Services (AWS).",
+    "id": "test_exact_match",
+    "domain": "Exact Skill Match",
+    "text": "Technical toolkit includes Python, SQL, Tableau, Pandas, and NumPy for business reporting.",
+    "ground_truth_skills": [
+      "python",
+      "sql",
+      "tableau",
+      "pandas",
+      "numpy"
+    ]
+  },
+  {
+    "id": "test_alias_match",
+    "domain": "Alias & Acronym Matching",
+    "text": "Hands-on experience with ML, NLP, AWS, PowerBI, and MS Excel for predictive modeling.",
+    "ground_truth_skills": [
+      "machine learning",
+      "natural language processing",
+      "aws",
+      "power bi",
+      "microsoft excel",
+      "predictive modeling"
+    ]
+  },
+  {
+    "id": "test_capitalization",
+    "domain": "Capitalization Invariance",
+    "text": "Skilled in PYTHON, Sql, PoWeR Bi, mAcHiNe LeArNiNg, and DaTa ViSuAliZatIoN.",
+    "ground_truth_skills": [
+      "python",
+      "sql",
+      "power bi",
+      "machine learning",
+      "data visualization"
+    ]
+  },
+  {
+    "id": "test_hyphenation",
+    "domain": "Hyphenation Variations",
+    "text": "Implemented machine-learning models, deep-learning architectures, and power-bi dashboards using scikit-learn.",
+    "ground_truth_skills": [
+      "machine learning",
+      "deep learning",
+      "power bi",
+      "scikit-learn"
+    ]
+  },
+  {
+    "id": "test_multi_word",
+    "domain": "Multi-Word Skill Phrases",
+    "text": "Specializing in Natural Language Processing, Computer Vision, Business Intelligence, and Data Visualization.",
+    "ground_truth_skills": [
+      "natural language processing",
+      "computer vision",
+      "business intelligence",
+      "data visualization"
+    ]
+  },
+  {
+    "id": "test_generic_words",
+    "domain": "Generic Words & Verbs Exclusion",
+    "text": "Analyze large business datasets, build scalable data systems, create executive reports, and work closely with cross-functional science teams using Python and SQL.",
+    "ground_truth_skills": [
+      "python",
+      "sql"
+    ]
+  },
+  {
+    "id": "test_company_names",
+    "domain": "Company & Platform False Positives",
+    "text": "Please contact me on LinkedIn or review my Google LinkedIn profile. Code repositories are available on GitHub using Git.",
+    "ground_truth_skills": [
+      "github",
+      "git"
+    ]
+  },
+  {
+    "id": "test_skills_section",
+    "domain": "Skills Section Detection",
+    "text": "TECHNICAL SKILLS:\n- Python\n- SQL\n- Microsoft Excel\n- Power BI\n- Statistics\n- Tableau",
+    "ground_truth_skills": [
+      "python",
+      "sql",
+      "microsoft excel",
+      "power bi",
+      "statistics",
+      "tableau"
+    ]
+  },
+  {
+    "id": "test_project_descriptions",
+    "domain": "Skills in Project Descriptions",
+    "text": "PROJECTS:\nRetail Analytics Platform: Developed an end-to-end analytics dashboard with Power BI and Python. Cleaned raw sales records using Pandas and automated SQL queries on PostgreSQL.",
+    "ground_truth_skills": [
+      "power bi",
+      "python",
+      "pandas",
+      "sql",
+      "postgresql"
+    ]
+  },
+  {
+    "id": "test_ds_full",
+    "domain": "Data Science Full Profile",
+    "text": "Senior Data Scientist with experience building Machine Learning and Deep Learning pipelines in Python. Proficient in Natural Language Processing, Scikit-Learn, PyTorch, Pandas, and SQL for Data Analysis. Experienced with Docker, Git, and deploying models to AWS.",
     "ground_truth_skills": [
       "data science",
       "machine learning",
@@ -16,73 +118,7 @@
       "data analysis",
       "docker",
       "git",
-      "amazon web services"
-    ]
-  },
-  {
-    "id": "test_fs_02",
-    "domain": "Full Stack Engineering",
-    "text": "Full Stack Developer specializing in Web Development. Strong foundation in JavaScript, TypeScript, React, and Node.js. Experience building REST APIs with PostgreSQL and MongoDB. Skilled in Docker, Git, GitHub, and Agile team environments.",
-    "ground_truth_skills": [
-      "full stack development",
-      "web development",
-      "javascript",
-      "typescript",
-      "react",
-      "node.js",
-      "rest api",
-      "postgresql",
-      "mongodb",
-      "docker",
-      "git",
-      "github",
-      "agile"
-    ]
-  },
-  {
-    "id": "test_bi_03",
-    "domain": "Business Intelligence & Analytics",
-    "text": "Business Intelligence Analyst with expertise in Data Analysis and reporting. Expert in Microsoft Excel, Power BI Desktop, Tableau, and SQL Server. Proven track record in problem solving, communication, and critical thinking.",
-    "ground_truth_skills": [
-      "business intelligence",
-      "data analysis",
-      "microsoft excel",
-      "power bi",
-      "tableau",
-      "sql",
-      "problem solving",
-      "communication",
-      "critical thinking"
-    ]
-  },
-  {
-    "id": "test_devops_04",
-    "domain": "DevOps & Cloud Infrastructure",
-    "text": "Cloud DevOps Engineer with in-depth knowledge of Kubernetes, Docker, Linux, and Cloud Computing. Managing CI/CD pipelines and infrastructure as code across Google Cloud Platform (GCP) and Microsoft Azure.",
-    "ground_truth_skills": [
-      "devops",
-      "kubernetes",
-      "docker",
-      "linux",
-      "cloud computing",
-      "cicd",
-      "google cloud platform",
-      "microsoft azure"
-    ]
-  },
-  {
-    "id": "test_swe_05",
-    "domain": "Backend Software Engineering",
-    "text": "Software Engineer working with C++, C#, .NET framework, and Java. Designing distributed backend systems with Redis, MySQL, and REST API architectures.",
-    "ground_truth_skills": [
-      "c++",
-      "c#",
-      ".net",
-      "java",
-      "backend development",
-      "redis",
-      "mysql",
-      "rest api"
+      "aws"
     ]
   }
 ]

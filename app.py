@@ -315,12 +315,19 @@ if analyze_btn:
         normalizer, extractor, matcher, scoring, recommendations = load_nlp_pipeline()
 
         with st.spinner("Executing NLP Pipeline: extracting skills, calculating TF-IDF cosine similarity, and matching..."):
-            # 1. Skill Extraction
-            res_skills = extractor.extract_skills(resume_text)
-            job_skills = extractor.extract_skills(job_text)
+            # 1. Skill Extraction with Section Evidence Tracking
+            res_ev = extractor.extract_skills_with_evidence(resume_text)
+            job_ev = extractor.extract_skills_with_evidence(job_text)
+            res_skills = sorted(list(res_ev.keys()))
+            job_skills = sorted(list(job_ev.keys()))
 
-            # 2. Skill Matching
-            match_results = matcher.match_skills(res_skills, job_skills)
+            # 2. Skill Matching with RapidFuzz and Evidence Table
+            match_results = matcher.match_skills(
+                resume_skills=res_skills,
+                job_skills=job_skills,
+                resume_evidence=res_ev,
+                job_evidence=job_ev,
+            )
 
             # 3. Scoring & Gap Determination
             match_pct = match_results["match_percentage"]
@@ -400,34 +407,36 @@ if analyze_btn:
             "🔍 NLP Engine Inspector",
         ])
 
-        # TAB 1: Skill Breakdown Chips
+        # TAB 1: Skill Alignment & Evidence Table
         with tab_skills:
-            st.subheader("Skills Comparison Breakdown")
+            st.subheader("📋 Skill Alignment & Evidence Table")
+            st.caption("Explainable matching with section evidence and RapidFuzz comparison.")
 
-            col_a, col_b = st.columns(2)
-            with col_a:
-                st.markdown(f"#### 📄 Skills Found in Resume ({len(res_skills)})")
-                if res_skills:
-                    chips_html = "".join([f'<span class="badge badge-extra">{s.title()}</span>' for s in res_skills])
-                    st.markdown(chips_html, unsafe_allow_html=True)
-                else:
-                    st.info("No recognized technical skills found in resume.")
+            if match_results.get("evidence_table"):
+                evidence_df = pd.DataFrame(match_results["evidence_table"])
 
-            with col_b:
-                st.markdown(f"#### 💼 Skills Required by Job ({len(job_skills)})")
-                if job_skills:
-                    chips_html = "".join([f'<span class="badge badge-matched">{s.title()}</span>' for s in job_skills])
-                    st.markdown(chips_html, unsafe_allow_html=True)
-                else:
-                    st.info("No recognized technical skills found in job description.")
+                # Display simple, professional interactive table
+                st.dataframe(
+                    evidence_df[["Skill", "Status", "Evidence"]],
+                    column_config={
+                        "Skill": st.column_config.TextColumn("Skill", width="medium"),
+                        "Status": st.column_config.TextColumn("Status", width="small"),
+                        "Evidence": st.column_config.TextColumn("Evidence", width="large"),
+                    },
+                    use_container_width=True,
+                    hide_index=True,
+                )
+            else:
+                st.info("No skills to display in comparison table.")
 
             st.markdown("---")
+            st.subheader("Skills Summary")
 
             c1, c2, c3 = st.columns(3)
             with c1:
                 st.markdown(f"#### ✅ Matched Skills ({match_results['total_matched']})")
                 if match_results["matched_skills"]:
-                    chips = "".join([f'<span class="badge badge-matched">{s.title()}</span>' for s in match_results["matched_skills"]])
+                    chips = "".join([f'<span class="badge badge-matched">{normalizer.format_skill_display(s)}</span>' for s in match_results["matched_skills"]])
                     st.markdown(chips, unsafe_allow_html=True)
                 else:
                     st.warning("No matching skills found.")
@@ -435,7 +444,7 @@ if analyze_btn:
             with c2:
                 st.markdown(f"#### ❌ Missing Skills ({match_results['total_missing']})")
                 if match_results["missing_skills"]:
-                    chips = "".join([f'<span class="badge badge-missing">{s.title()}</span>' for s in match_results["missing_skills"]])
+                    chips = "".join([f'<span class="badge badge-missing">{normalizer.format_skill_display(s)}</span>' for s in match_results["missing_skills"]])
                     st.markdown(chips, unsafe_allow_html=True)
                 else:
                     st.success("Zero missing skills! Perfect requirement coverage.")
@@ -443,7 +452,7 @@ if analyze_btn:
             with c3:
                 st.markdown(f"#### ➕ Extra Candidate Skills ({match_results['total_extra']})")
                 if match_results["extra_skills"]:
-                    chips = "".join([f'<span class="badge badge-extra">{s.title()}</span>' for s in match_results["extra_skills"]])
+                    chips = "".join([f'<span class="badge badge-extra">{normalizer.format_skill_display(s)}</span>' for s in match_results["extra_skills"]])
                     st.markdown(chips, unsafe_allow_html=True)
                 else:
                     st.info("No extra skills beyond requirements.")

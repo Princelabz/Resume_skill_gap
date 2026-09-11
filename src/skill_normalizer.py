@@ -93,3 +93,49 @@ class SkillNormalizer:
             target.parent.mkdir(parents=True, exist_ok=True)
             with open(target, "w", encoding="utf-8") as f:
                 json.dump(self.alias_map, f, indent=2)
+
+    @staticmethod
+    def format_skill_display(skill: str) -> str:
+        """Format skill name for clean, professional display."""
+        if not skill:
+            return ""
+        s = skill.lower().strip()
+        canonical_displays = {
+            "aws": "AWS",
+            "sql": "SQL",
+            "power bi": "Power BI",
+            "numpy": "NumPy",
+            "pandas": "Pandas",
+            "python": "Python",
+            "tableau": "Tableau",
+            "microsoft excel": "Microsoft Excel",
+            "machine learning": "Machine Learning",
+            "data visualization": "Data Visualization",
+            "statistics": "Statistics",
+            "c++": "C++",
+            "c#": "C#",
+            ".net": ".NET",
+            "node.js": "Node.js",
+            "react": "React",
+            "scikit-learn": "scikit-learn",
+            "html": "HTML",
+            "css": "CSS",
+            "r": "R",
+            "ci/cd": "CI/CD",
+            "cicd": "CI/CD",
+            "gcp": "GCP",
+            "business intelligence": "Business Intelligence",
+            "deep learning": "Deep Learning",
+            "natural language processing": "Natural Language Processing",
+            "computer vision": "Computer Vision",
+            "artificial intelligence": "Artificial Intelligence",
+            "data science": "Data Science",
+            "data analysis": "Data Analysis",
+            "data modeling": "Data Modeling",
+            "data engineering": "Data Engineering",
+            "etl": "ETL",
+            "extract transform load": "Extract Transform Load",
+        }
+        if s in canonical_displays:
+            return canonical_displays[s]
+        return skill.strip().title()
