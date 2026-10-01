@@ -2,6 +2,14 @@
 
 A transparent, explainable Natural Language Processing (NLP) web application that compares candidate resumes with target job descriptions. The system extracts technical and essential skills, normalizes acronyms and variants, computes skill match percentages, evaluates document textual similarity via TF-IDF and Cosine Similarity, classifies skill gap severity, and provides prioritized learning recommendations powered by the **O*NET Occupational Knowledge Base**.
 
+
+---
+### Output 
+
+https://princelabz-resume-skill-gap-app-axr0zr.streamlit.app/
+---
+
+
 ---
 
 ## 📌 Project Description
